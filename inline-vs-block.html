@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline Vs Block</title>
+    <style>
+        .card {
+            background-color: lightgray;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- What is Block Tag? -->
+    <!-- Block elements create a new “block” on the page. They start on a new line and take the full width of their container by default. -->
+    <!-- Examples of block elements include:<div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <section>, <article>, <header>, <footer> -->
+
+    <!-- what is inline Tag? -->
+    <!-- Inline elements do not start on a new line and only take up as much width as necessary. They flow within the content and do not create a new block. -->
+    <!-- Examples of inline elements include: <span>, <a>, <strong>, <em>, <b>, <i>, <img>, <small>, <sub>, <sup> -->
+
+    <!-- What is the difference between <div> and <section> tag? -->
+
+    <!-- <div> is a generic container that has no semantic meaning. It is used for grouping and styling purposes. -->
+    <!-- <section> is a semantic element that represents a standalone section of content. It is used to group related content together and can have its own heading. -->
+
+    <!-- <section> → logical content area -->
+    <!-- <div> → used inside for styling -->
+
+    <header>
+      <h1>My Website</h1>
+    </header>
+
+    <main>
+        <!-- section -1 -->
+      <section>
+        <h2>About Us</h2>
+        <p>We are a software company.</p>
+      </section>
+      
+      <!-- section - 2 -->
+      <section>
+        <h2>Our Services</h2>
+
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>We create modern and responsive website designs.</p>
+        </div>
+
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>We develop dynamic and user-friendly websites.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 My Website</p>
+    </footer>
+  </body>
+</html>
